@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..
+700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1
+,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Gabarito:wght@400..900&
+family=Ms+Madi&family=Tagesschrift&family=Young+Serif&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Guess the Number from 1 to 5</h1>
+
+        <div class="process">
+            <input placeholder="Enter any number" id="input">
+            <button id="button" onclick="checktheNumber()">Check</button>
+
+            <p id="result">You are Right or Wrong</p>
+            <p id="guessCount">Available Guesses : 3</p>
+        </div>
+    </div>
+
+
+    <script src="script.js">
+    </script>
+
+    <style>
+        body {
+            background-image: url('./img.jpg');
+            background-size: cover;
+            background-position: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .container {}
+
+        .container h1 {
+            font-size: 60px;
+            margin: 80px;
+        }
+
+        .process {
+
+            text-align: center;
+        }
+
+        .process input {
+            padding: 20px;
+            width: 37%;
+            font-size: 20px;
+            border-radius: 20px;
+        }
+
+        .process button {
+            padding: 20px;
+            font-size: 20px;
+            border-radius: 20px;
+
+
+        }
+
+        .process button:hover {
+            background-color: black;
+            color: white;
+        }
+
+        .process p {
+
+            font-family: "Young Serif", serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 23px;
+            padding: 8px;
+
+        }
+    </style>
+</body>
+
+</html>
